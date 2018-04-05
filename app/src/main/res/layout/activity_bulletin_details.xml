@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="my.edu.tarc.bulletinboard.Activity.BulletinDetails">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        >
+        <ImageButton
+            android:id="@+id/imageButtonDetail"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_action_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailTittle"
+            android:textColor="#ffffff"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif"
+                android:text="Send To"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/horizontal1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textViewTo"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textViewBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontal1"
+                android:fontFamily="sans-serif"
+                android:text="Posted By"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/horizontal2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textViewBy"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontal2"
+                android:fontFamily="sans-serif"
+                android:text="Title"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/horizontal3"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageViewPic"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+
+                android:layout_below="@+id/horizontal3"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/example_appwidget_preview" />
+            <TextView
+                android:id="@+id/textViewDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewPic"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="14sp"
+                android:paddingTop="14sp"
+                android:text="Description"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewEventStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewDetails"
+                android:fontFamily="sans-serif"
+                android:text="StartDate"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewEventDueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewEventStartDate"
+                android:fontFamily="sans-serif"
+                android:text="DueDate"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textViewFees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewEventDueDate"
+                android:fontFamily="sans-serif"
+                android:text="Fees"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textViewPaymentDueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewFees"
+                android:fontFamily="sans-serif"
+                android:text="PyamentDueDate"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#ff2222"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textViewRegistrationStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPaymentDueDate"
+                android:fontFamily="sans-serif"
+                android:text="RegistrationStartDate"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textViewRegistrationDueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewRegistrationStartDate"
+                android:fontFamily="sans-serif"
+                android:text="RegistrationDueDate"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewRegistrationDueDate"
+                android:autoLink="web"
+                android:fontFamily="sans-serif"
+                android:text="Link"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
